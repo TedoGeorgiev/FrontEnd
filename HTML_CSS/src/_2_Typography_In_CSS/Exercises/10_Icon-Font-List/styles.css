@@ -1,1 +1,29 @@
-/* TODO: style the html */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
+
+html {
+    font: 18px Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font: inherit;
+    line-height: 1.5;
+}
+
+ul {
+    display: block;
+    list-style: none;
+    font-size: 25px;
+}
+
+
+.check li i {
+    color: #2fcc71;
+}
+
+.star li i {
+    color: coral;
+}
+
+.contact li i {
+    color: #3498da;
+}
