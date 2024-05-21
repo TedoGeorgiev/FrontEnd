@@ -1,0 +1,24 @@
+section {
+    box-sizing: border-box;
+    width: 300px;
+
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+p {
+    border: 4px solid black;
+    padding-top: 20px;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}

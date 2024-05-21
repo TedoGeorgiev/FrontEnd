@@ -1,0 +1,26 @@
+p {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+.solid {
+    border: 4px solid black;
+}
+
+.dashed {
+    border: 4px dashed black;
+}
+
+.dotted {
+    border: 4px dotted black;
+}
+
+.mixed-border {
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px dashed black;
+    border-bottom: 4px dashed black;
+}
