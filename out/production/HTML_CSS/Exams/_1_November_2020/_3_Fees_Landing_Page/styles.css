@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item {
+    list-style-type: none;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: #575471;
+    margin: 20px 8px;
+}
+
+.nav-logo {
+    max-width: 150px;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.programs::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("./images/calculator-icon.svg") no-repeat;
+    top: 150px;
+    left: -62px;
+}
+
+.programs {
+    background: #54536f;
+    padding: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    max-height: 510px;
+}
+
+.programs-title {
+    color: #ffffff;
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.program {
+    background: white;
+    border-radius: 12px;
+    width: 30%;
+    max-width: 400px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 1px 1px 7px -3px black;
+    position: relative;
+    top: 87px;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-title {
+    font-size: 24px;
+    color: #54536f;
+    flex-grow: 1;
+}
+
+.program-subtitle {
+    padding: 15px;
+    color: #575471;
+}
+
+.program-cta {
+    background: #9a5dc6;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px -2px black;
+    margin: 48px auto;
+}
+
+.program-footer {
+    color: white;
+    padding: 8px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.design-basics .program-footer {
+    background: linear-gradient(90deg, rgba(0,159,44,1) 0%, rgba(76,214,129,1) 100%);
+}
+
+.fundamentals .program-footer {
+    background: linear-gradient(90deg, rgba(76,107,135,1) 0%, rgba(98,154,207,1) 100%);
+}
+
+.professional .program-footer {
+    background: linear-gradient(90deg, rgba(74,55,165,1) 0%, rgba(141,126,226,1) 100%);
+}
+
+.fundamentals .program-footer,
+.professional .program-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.program-footer-online .program-footer-onsite {
+    flex-basis: 50%;
+}
+
+.program-footer-online {
+    position: relative;
+}
+
+.program-footer-online::before {
+    content: '';
+    background: white;
+    display: inline-block;
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: -45px;
+}
+
+.forms {
+    margin: 250px 250px;
+    color: #575471;
+    padding-top: 50px;
+    
+
+}
+
+.forms .forms-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.forms .forms-text {
+    font-size: 18px;
+}

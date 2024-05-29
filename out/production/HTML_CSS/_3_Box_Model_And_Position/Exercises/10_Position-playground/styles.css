@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 0.4em;
+    /*абсолют прави картинката да може да се мести спрямо другите елементи*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* центираме картинката в средата*/
+    transform: translate(-50%, -50%);
+    /* слагаме сянка на картинката*/
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+/* правим вътрешна сянка*/
+.card::before {
+    /* създаваме елемент през CSS като използваме display block */
+    display: block;
+    content: "";
+
+    position: absolute;
+    /* позиционираме си го да се разпъне в/у цялата снимка*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+
+    /* или ползваме inset */
+    inset: 0;
+    /* слагаме сянка и накрая слагаме inset да кажем, че сянката е вътре в елемента*/
+    box-shadow: 0 0 5em 0.5em rgb(0, 0, 0, 0.7) inset;
+    /* анимираме си сянката*/
+    opacity: 1;
+    /* казваме му за колко време да се анимира*/
+    transition: opacity 0.3s ease-in;
+}
+
+.card:hover::before {
+    opacity: 0;
+}
+
+.card svg {
+    display: block;
+    width: 2em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    fill: whitesmoke;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
+}
+/* прави цвета на звездата голд, когато мишката е на него*/
+.card svg:hover {
+    fill: gold;
+    transition: fill 0.3s ease-in;
+}
+/* сменя опаситито на звездата, когато мишката е на картичката*/
+.card:hover svg {
+    opacity: 1;
+}
+
+
+/*
+оразмерява контейнера спрямо големината на прозореца
+ */
+.viewport {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.viewport:nth-child(1) {
+
+        background-image:
+                radial-gradient(
+                        farthest-corner circle at 100% 0%,
+                        #00dfff 0%, #8c00ea 100%
+                )
+    ;
+}
+
+.viewport:nth-child(2) {
+
+        background-image:
+                linear-gradient(to bottom right, #fff700 23% 0%, #ff6500 54% 100%, #b18fff 100%);
+
+}

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+div p {
+    color: darkblue;
+
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul>li {
+    list-style-type: circle;
+}
+
+p + p {
+    background-color: lightgray;
+}
+
+p ~ span {
+    font-weight: bold;
+}
+
+span {
+    color: red;
+}
+

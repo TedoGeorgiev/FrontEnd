@@ -1,0 +1,33 @@
+
+h1  {
+    color:  red;
+}
+
+p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #5c5a5a;
+}
+
+#main-title {
+    color: green;
+}
+
+#special-paragraph {
+    font-style: italic;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul>li {
+    color: #00b4b5;
+}
+
+div {
+    background-color: #8c00ea;
+}

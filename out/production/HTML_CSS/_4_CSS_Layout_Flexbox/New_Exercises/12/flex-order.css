@@ -1,0 +1,37 @@
+
+.flex-container {
+    border: 2px solid blue;
+    display: flex;
+    max-width: 300px;
+    padding: 1em;
+}
+
+.flex-item {
+    border: 1px solid black;
+    background: lightgray;
+    padding: 1em;
+}
+
+.three {
+    order: 1;
+}
+
+.five {
+    order: 2;
+}
+
+.two {
+    order: 3;
+}
+
+.six {
+    order: 4;
+}
+
+.one {
+    order: 5;
+}
+
+.four {
+    order: 6;
+}

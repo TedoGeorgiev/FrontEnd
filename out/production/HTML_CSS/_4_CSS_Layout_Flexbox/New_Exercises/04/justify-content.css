@@ -1,0 +1,36 @@
+.flex-container {
+    border: 2px solid blue;
+    width: 320px;
+    display: flex;
+    padding: 1em;
+}
+
+.flex-item {
+    border: 1px solid black;
+    padding: 1em;
+    background: #ccc;
+}
+
+.default {
+    justify-content: left;
+}
+
+.center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}

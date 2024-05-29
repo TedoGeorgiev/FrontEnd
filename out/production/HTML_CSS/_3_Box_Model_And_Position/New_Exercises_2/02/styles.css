@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5 serif;
+    border: 2px solid green;
+}
+
+.site {
+    max-width: 800px;
+    border: 2px solid blue;
+    margin: 2em auto;
+}
+
+.site > * {
+    border: 2px solid black;
+    margin: 2em;
+    padding: 2em;
+}
+
+.site>div>p {
+    text-align: center;
+}
+

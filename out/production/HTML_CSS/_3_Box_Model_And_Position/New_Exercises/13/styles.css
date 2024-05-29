@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+section {
+
+    border: 1px solid black;
+}
+
+h2 {
+    padding: 0.5em 0;
+}
+
+p {
+    margin-left: 1.5em;
+    border: 1px solid black;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    padding: 0.5em;
+ }
+
+section p:first-child {
+    margin-top: 1.5em;
+}
+
+section p:last-child {
+    margin-bottom: 1.5em;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+}
+
+.relative p:nth-child(2), .absolute p:nth-child(2) {
+    background: lightgreen;
+}
+
+.relative p:nth-child(2) {
+    position: relative;
+    top: 1.5em;
+    left: 3.5em
+}
+
+.absolute {
+    position: relative;
+}
+
+.absolute p:nth-child(2) {
+    position: absolute;
+    top: 3.5em;
+    left: 1.5em;
+}

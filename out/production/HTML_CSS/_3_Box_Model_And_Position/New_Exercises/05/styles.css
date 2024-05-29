@@ -1,0 +1,27 @@
+
+article {
+    border: 2px solid black;
+}
+
+p {
+    padding-left: 10px;
+    border: 1px solid green;
+}
+
+.fixed {
+    height: 200px;
+}
+
+.percent {
+    height: 50%;
+}
+
+.vp {
+    height: 50vh;
+}
+
+.min-max {
+    min-height: 100px;
+    max-height: 300px;
+
+}
