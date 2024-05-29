@@ -1,0 +1,36 @@
+body {
+    background: #369;
+    color: white;
+    font: 14px / 1.5 Lato, sans-serif;
+}
+
+
+.button {
+    display: block;
+    padding: 2em;
+    background: #fff;
+    color: #000;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: orange;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: #090;
+    }
+    .button:hover {
+        background: red;
+        color: #fff;
+    }
+
+}

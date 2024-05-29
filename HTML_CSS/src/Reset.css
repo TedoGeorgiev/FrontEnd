@@ -10,3 +10,7 @@
 html {
     box-sizing: border-box;
 }
+
+body {
+    font: 14px / 1.5 Lato, sans-serif;
+}

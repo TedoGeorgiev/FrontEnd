@@ -1,0 +1,35 @@
+.flex-container {
+    border: 2px solid blue;
+    width: 300px;
+    display: flex;
+    padding: 1em;
+    flex-direction: row;
+    aspect-ratio: 3/2;
+}
+
+.flex-item {
+    border: 1px solid black;
+    padding: 1em;
+    background: #ccc;
+    align-self: flex-start;
+}
+
+.flex-start .flex-item {
+    align-self: flex-start;
+}
+
+.center .flex-item:nth-child(2) {
+    align-self: center;
+}
+
+.flex-end .flex-item:nth-child(2) {
+    align-self: flex-end;
+}
+
+
+.baseline .flex-item {
+    align-self: baseline;
+}
+
+
+

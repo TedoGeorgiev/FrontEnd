@@ -1,0 +1,36 @@
+.flex-container {
+    border: 2px solid blue;
+    width: 400px;
+    display: flex;
+    padding: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.flex-item {
+    border: 1px solid black;
+    padding: 1em;
+    background: #ccc;
+
+}
+
+.default {
+    align-content: flex-start;
+}
+
+.center {
+    align-content: center;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+.space-between {
+    align-content: space-between;
+}
+
+.space-around {
+    align-content: space-around;
+}
