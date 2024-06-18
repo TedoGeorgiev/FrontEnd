@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px / 1.5 "Inter", sans-serif;
+}
+
+body, textarea, input, button {
+    font: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    background: #85DCFF;
+    justify-content: center;
+    align-items: center;
+    margin: 5em auto;
+}
+
+.card {
+    display: flex;
+    gap: 6em;
+    max-width: 1000px;
+}
+
+.main-content {
+    flex: 1;
+}
+.main-content h2{
+    font-size: 2.5em;
+}
+
+.main-content p,
+.main-content ul{
+    margin-top: 2.5em;
+}
+
+.main-content ul {
+    display: flex;
+    gap: 1em;
+}
+
+.main-content ul li {
+    display: block;
+    list-style: none outside;
+}
+
+.main-content ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1em 2.5em;
+    background: #fff;
+    border-radius: 0.3em;
+}
+
+.buttons .focus {
+    background: #42AA59;
+    border-radius: 0.3em;
+}
+
+.media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media img {
+    max-width: 100%;
+}
+
+

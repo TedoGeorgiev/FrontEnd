@@ -10,3 +10,13 @@
 html {
     box-sizing: border-box;
 }
+
+body {
+    font: 14px / 1.5 Lato, sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

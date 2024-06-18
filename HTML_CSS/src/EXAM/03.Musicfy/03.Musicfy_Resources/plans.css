@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 18px / 1.5 Lato, sans-serif;
+    box-sizing: border-box;
+}
+
+body, textarea, th, td, tr, a {
+    font: inherit;
+}
+body {
+    padding: 2em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif ;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*Navigation*/
+
+.nav {
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav .spotify-logo {
+    width: 4em;
+    height: 2em;
+}
+
+.nav .main-nav {
+    list-style: none outside;
+    background: black;
+    display: flex;
+    gap: 2em;
+    padding-right: 1em;
+    padding-bottom: 0;
+}
+
+.main-nav li {
+    display: block;
+}
+
+.main-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+/*Green-Box*/
+
+.green-box {
+    background: #1DB954;
+    text-align: center;
+    width: auto;
+    height: 375px;
+    position: relative;
+}
+
+.green-box h3 {
+    color: white;
+    padding-top: 3em;
+
+}
+
+
+
+.plans {
+    display: flex;
+    flex: 0 1 515px;
+    justify-content: space-evenly;
+}
+
+.music {
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    top: 11.5em;
+    left: 2em;
+}
+
+.plans article {
+    width: 500px;
+    height: auto;
+    border: 1px solid #909090;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.6);
+    border-radius: 0.5em;
+    overflow: hidden;
+    background: white;
+    margin-top: -10.5em;
+    z-index: 100;
+}
+
+.plans article h3{
+    text-align: center;
+    padding: 1em;
+    opacity: 0.7;
+}
+
+.plans article li {
+    list-style: circle;
+    opacity: 0.7;
+}
+
+.plans article ul {
+    padding: 2em 4em 0 2.5em;
+}
+
+.plans .button {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.plans .button a {
+    background: #1DB954;
+    text-decoration: none;
+    color: white;
+    padding: 1em 3em;
+    border-radius: 5em;
+}
+
+.plans .prices {
+    display: flex;
+    margin-top: 2em;
+    background: #191414;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+
+.plans .prices p {
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.plans .arrow::after {
+    content: '';
+    width: 1px;
+    height: 35px;
+    background: white;
+    position: absolute;
+    margin-left: 1em;
+
+}
+
+
+/*Main-text*/
+
+main {
+    margin-top: 10em;
+    display: flex;
+    gap: 6em;
+    padding-left: 6em;
+    padding-right: 10em;
+}
+
+.main-text p:first-of-type {
+    padding-top: 34px;
+}
+
+/*Table*/
+
+.table h2 {
+    margin: 2rem;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+.table p {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.table-content {
+    margin: 0 16em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+table img {
+    width: 1.5em;
+    height: auto;
+}
+
+table td {
+    padding: 0.5em;
+}
+
+table tr:nth-child(odd) {
+    background-color: #CCCBCB;
+}
+
+table tr:nth-child(even) {
+    background-color: #81D8A0;
+}
+
+footer {
+    background: #191414;
+    color: white;
+    text-align: center;
+    margin-top: 5em;
+}
+
+footer p {
+    padding-top: 1.5em;
+    line-height: 1.5;
+}
+
+
