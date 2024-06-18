@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px / 1.5 Lato, sans-serif;
+}
+
+body, form, legend, fieldset, input, label {
+    font: inherit;
+}
+
+body {
+    background: #EEEEEE;
+}
+
+form {
+    max-width: 500px;
+    margin: 2em auto;
+    background: #FFFFFF;
+    padding: 2em 3em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+fieldset .field {
+    margin: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.field label {
+    font-weight: bold;
+}
+
+
+
+
+
+

@@ -18,8 +18,11 @@ body {
 }
 
 .site {
+    max-width: 1100px;
+    margin: 0 auto;
     background: #F8F8F8;
     border-radius: 0.3em;
+    overflow: hidden;
     box-shadow: 0 0 1em 0 rgb(0,0,0,0.1);
 }
 
@@ -29,7 +32,9 @@ body {
     text-decoration: none;
     padding: 2rem;
 }
-
+.site header nav {
+    background: #444444;
+}
 .site header nav > ul {
     display: flex;
     flex-direction: column;
@@ -37,8 +42,7 @@ body {
 
 .site nav ul li {
     display: block;
-    background: #444444;
-    list-style: none;
+    list-style: none outside;
     flex: 1 0 auto;
 }
 
@@ -57,9 +61,20 @@ body {
 
 .site .main-content {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2em;
     padding: 2em;
 }
+
+.site .main-content main {
+    flex: 1 1 650px;
+}
+
+.site .main-content aside {
+    flex: 1 0 250px;
+}
+
 
 .site .main-content p {
     margin-top: 1em;
@@ -79,6 +94,7 @@ body {
     .site header nav > ul {
         display: flex;
         flex-direction: row;
+
     }
 
     .site header nav ul li a {
@@ -86,6 +102,12 @@ body {
         border: none;
     }
 
+    .site .main-content {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        padding: 2em;
+    }
 }
 
 
