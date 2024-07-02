@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px / 1.5 "Agbalumo", sans-serif;
+}
+
+*, *::before, *::after{
+    font: inherit;
+}
+
+h1 {font-size: 2.8em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+
+
+body {
+    background: white;
+    padding: 3em;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.site {
+    max-width: 850px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.section-background {
+    background: #D5EBEA;
+}
+
+.section-background header {
+    padding: 2em 3em 0 2em;
+    text-align: center;
+
+}
+
+.section-background header h1{
+    font-weight: bold;
+}
+
+.section-background header p {
+    font-size: 1.2em;
+}
+
+.section-background footer {
+    padding-left: 3em;
+}
+
+.section-background footer span {
+    font-weight: bold;
+}
+
+
+.section-background-white {
+    display: flex;
+    background: white;
+    padding: 2em 2em 0 2em;
+}
+
+.main-content {
+    display: flex;
+    gap: 1em;
+}
+
+.media {
+    width: 100%;
+    height: auto;
+    flex: 1 0 40%;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+.media-card .center{
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+
+
+.text-aside {
+    flex: 1 1 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-aside p {
+    padding-top: 2em;
+    font-size: 1.2em;
+    text-indent: 2em;
+}
+
+.section-background-black {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.2em 4em 0 ;
+    margin-top: 2em;
+}
+header {
+
+}
+
+header > * {
+    border-bottom: 2px solid black;
+}
+
+
+footer {
+    background: #D5EBEA;
+}
+
+footer p {
+    padding-top: 1em;
+}
+
+footer p:last-of-type {
+    padding-bottom: 0.5em;
+}
+

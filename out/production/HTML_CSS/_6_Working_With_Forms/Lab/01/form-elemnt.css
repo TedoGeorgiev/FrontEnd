@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px /1.5 Lato, sans-serif;
+}
+
+body {
+    font: inherit;
+    padding: 2em;
+    background: #ccc;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 0.3em;
+    max-width: 500px;
+    padding: 1em;
+    background: white;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+}
+
+label {
+    padding: 2em;
+}
+
+input {
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+}
+
