@@ -20,4 +20,4 @@ function solve (number) {
     console.log(sum);
 }
 
-solve(2);
+solve(22222);
