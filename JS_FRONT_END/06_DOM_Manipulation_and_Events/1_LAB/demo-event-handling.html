@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Event Handling</h1>
+
+        <div id="count">0</div>
+
+        <button id="increase-button">+</button>
+        <button id="decrease-button">-</button>
+        <button id="reset-button">RESET</button>
+        <script>
+
+            const countElement = document.getElementById('count');
+            const increaseButton = document.getElementById('increase-button');
+
+            increaseButton.addEventListener('click', () => {
+                countElement.textContent = Number(countElement.textContent) + 1;
+            });
+
+            const decreaseButton = document.getElementById('decrease-button');
+            decreaseButton.addEventListener('click', () => {
+                countElement.textContent = Number(countElement.textContent) - 1;
+            })
+
+            const resetButton = document.getElementById('reset-button');
+            resetButton.addEventListener('click', () => {
+                countElement.textContent = '0';
+            })
+
+        </script>
+
+    </body>
+</html>
