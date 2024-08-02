@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>DOM Manipulations</h1>
+
+        <ul class="movie-list">
+
+            <li>The Matrix</li>
+            <li>LOTR</li>
+
+        </ul>
+
+        <script>
+            const movieListEl = document.querySelector('ul.movie-list');
+
+            const newMovieEl = document.createElement('li');
+            newMovieEl.textContent = 'Pod Prikritie';
+
+            setTimeout(() => {
+                movieListEl.append(newMovieEl);
+            }, 2000);
+
+            
+            const firstMovieEl = movieListEl.children[0];
+            const lastMovieEl = movieListEl.querySelector('li:last-child');
+
+            setTimeout(() => {
+                lastMovieEl.remove();
+            }, 4000);
+
+            setTimeout(() => {
+                movieListEl.appendChild(firstMovieEl);
+            }, 6000);
+
+            const firstMovieElClone = firstMovieEl.cloneNode(true);
+            firstMovieElClone.textContent = firstMovieElClone.textContent + ' Clone';
+            movieListEl.appendChild(firstMovieElClone);
+
+
+        </script>
+
+    </body>
+</html>
